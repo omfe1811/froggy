@@ -1,0 +1,104 @@
+body {
+    cursor: url('/home/big_polish_daddy69/Desktop/kurset'), -10 -10, auto;
+    font-family: Helvetica;
+    margin: auto;
+    padding-top: 15%;
+    text-align: center;
+    background-color: #002e0f;
+    color: #90ffb5;
+    padding:3%;
+} 
+a:link {
+    color: rgb(207, 106, 247);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(255, 0, 255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+p {
+    font-size: 25px;
+    color: hsl(180, 100%, 67%);
+}
+h1 {
+    font-size: 50px;
+    color: rgb(219, 211, 93);
+}
+
+
+ul {
+    text-align: left;
+}
+
+.froggo {
+    width: 600px;
+    height: 400px;
+    content:url(frogg.png);
+}
+.froggo:hover {
+width: 1200px; 
+height: 800px; 
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+    color: hsl(180, 100%, 67%);
+    background-color: #002e0f;
+}
+.grid {
+    background-image: url("https://png.pngtree.com/png-clipart/20220603/ourmid/pngtree-cute-worm-png-image_4827601.png");
+    height: 20px;
+    width: 100px;
+    left: 100px;
+    position: absolute;
+    animation: move 1.5s forwards;
+  }
+  
+  @keyframes move {
+    from {
+      bottom: 200px;
+    }
+    to {
+      bottom: 0;
+    }
+  }
+  .bokor-regular {
+    font-family: "Bokor", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.noto-sans-display-text {
+    font-family: "Noto Sans Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
