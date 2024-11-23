@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <title>Grumpy Froggy</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <h1 class="bokor-regular">Freddie the Frog says <br>Have a <b>good</b> day</h1>
+        <img alt="Grumpy rain frog, fat and round" class="froggo" src="images/frogg.png">
+        <figcaption>This frog is not having a good day</figcaption>
+
+        <!-- Worm Button and Counter -->
+        <span class="buttonworm">
+            <button type="button" onClick="onClick();" id="fallButton">Click me to feed the frog</button>
+            <p>Worms: <span id="clicks">0</span></p>
+        </span>
+
+        <p>Cute and fat</p>
+        <h2>Check out this intimidating froggo <a href="https://www.youtube.com/watch?v=cBkWhkAZ9ds">war cry</a></h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cBkWhkAZ9ds?si=U7xlmvYDb13ZK7By" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        let clicks = 0;
+
+        function onClick() {
+    clicks++;
+    document.getElementById("clicks").innerHTML = clicks;
+
+    // Dynamically create a worm image
+    const wormImg = document.createElement('img');
+    wormImg.src = 'images/worm.png';
+    wormImg.alt = 'Worm';
+    wormImg.classList.add('worm'); // Apply fall animation class
+
+    // Set random horizontal position (0% to 100% of the screen width)
+    const randomLeft = Math.random() * 100; // Generates a value between 0 and 100
+    wormImg.style.left = `${randomLeft}%`; // Set the random left position
+
+    // Add the worm image to the container
+    document.getElementById('container').appendChild(wormImg);
+
+    // Remove the worm image after 2 seconds (animation duration)
+    setTimeout(() => {
+        wormImg.remove();
+    }, 2000);
+}
+
+    </script>
+</body>
+</html>

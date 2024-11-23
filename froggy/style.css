@@ -1,0 +1,95 @@
+body {
+  cursor: url('images/cursor-removebg-preview.png') 16 16, auto;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #002e0f;
+  color: #90ffb5;
+  font-family: "Noto Sans Display", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5 px;
+  text-align: center;
+  position: relative;
+}
+
+.froggo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+  color: hsl(180, 100%, 67%);
+  background-color: #002e0f;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.worm {
+  position: absolute;
+  top: -50px; /* Start slightly above the top of the viewport */
+  width: 100px; /* Worm width */
+  height: auto;
+  animation: fall 2s ease-out forwards; /* Fall animation */
+}
+
+/* Fall animation to move the worm to the bottom of the screen */
+@keyframes fall {
+  to {
+    top: 100vh; /* Falls to the bottom of the screen */
+  }
+}
+
+
+.buttonworm {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers items horizontally */
+  gap: 15px;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+  color: rgb(219, 211, 93);
+}
+
+figcaption {
+  font-size: 18px;
+  color: #fff;
+}
+.bokor-regular {
+  font-family: "Bokor", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shrikhand-regular {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-sans-display-text {
+  font-family: "Noto Sans Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
