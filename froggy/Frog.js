@@ -22,3 +22,4 @@ setTimeout(() => {
 wormImg.remove();
 }, 2000);
 }
+
